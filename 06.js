@@ -2,7 +2,8 @@
  * Q: hasNegative 함수
  *
  * - hasNegative 를 작성하세요.
- * - 파라미터로 받는 배열에 음수가 있는지 확인합니다. (some 사용)
+ * - 파라미터로 받는 배열에 음수가 있는지 확인합니다. (some 사용) 
+ * // some() 함수는 배열의 1개 요소라도 특정 조건을 충족하는지 확인(OR)
  *
  * @param {number[]} arr
  * @returns {boolean}
@@ -17,10 +18,14 @@
  */
 
 // TODO: hasNegative 함수를 작성하세요.
-function hasNegative() {}
+function hasNegative(arr) {
+    return arr.some(num => num < 0);
+}
 
 // TODO: allPositive 함수를 작성하세요.
-function allPositive() {}
+function allPositive(arr) {
+    return arr.every(num => num > 0);
+}
 
 // export를 수정하지 마세요.
 export { hasNegative, allPositive };
